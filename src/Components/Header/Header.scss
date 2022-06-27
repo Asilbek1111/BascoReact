@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Poppins, sans-serif;
+}
+
+.header {
+  position: relative;
+  color: white;
+  background-image: linear-gradient(
+    21.5deg,
+    #11172a 8.56%,
+    #11172a 91.44%,
+    #2f3a5e 91.44%
+  );
+
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__wrapper {
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .first-part {
+      margin-top: 2rem;
+      padding: 0 7rem;
+      h1 {
+        font-size: 40px;
+      }
+      .parag {
+        margin-top: 3rem;
+        padding-left: 3rem;
+      }
+      .btns {
+        margin-top: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .video {
+          background-color: #fbd289;
+          border-radius: 12px;
+          color: black;
+          font-size: 18px;
+          padding: 15px 25px;
+        }
+      }
+    }
+    .second-part {
+      img {
+        width: 700px;
+      }
+      .play {
+        position: absolute;
+        width: 20%;
+      }
+      .rahbar {
+        border-radius: 10px;
+        width: fit-content;
+        background-color: #1a243e;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        left: 69%;
+        top: 90%;
+        .stardiv {
+          padding: 8px 5px;
+          justify-content: center;
+          background-color: #ff6c8f;
+          border-radius: 10px 0 0 10px;
+
+          .star {
+            justify-content: center;
+            width: 75%;
+          }
+        }
+        .left {
+          padding: 8px 5px;
+        }
+      }
+    }
+  }
+  .diamond-round {
+    position: absolute;
+    top: 900px;
+    left: 54%;
+    .diamond {
+      position: absolute;
+      left: -50%;
+    }
+  }
+}
