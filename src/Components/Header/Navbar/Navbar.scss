@@ -1,0 +1,42 @@
+.navbar-left {
+  height: 100vh;
+  background-color: #191a1e;
+  color: white;
+  width: fit-content;
+  font-size: 25px;
+}
+
+ul {
+  list-style: none;
+  position: sticky;
+}
+
+li {
+  padding: 20px 40px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+li:focus{
+    background-color: #cfb667;
+}
+
+li:hover {
+  background-color: #cfb667;
+}
+.chiziq {
+  margin-right: 2px;
+}
+
+.hey {
+  margin-right: 10px;
+}
+
+.active {
+  background-color: #cfb667;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

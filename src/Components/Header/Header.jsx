@@ -1,4 +1,5 @@
 import "../Header/Header.scss";
+import { Link } from "react-router-dom";
 import bascoLogo from "../../Svgs/555.png";
 import sunLogo from "../../Image/111.svg";
 import round from "../../Svgs/Ellipse2.png";
@@ -12,8 +13,11 @@ function Header() {
   return (
     <div className="header">
       <div className="nav">
-        <img src={bascoLogo} alt="basco" />
-        <p>+998912226434</p>
+        <img className="bascologo" src={bascoLogo} alt="basco" />
+        <p className="paragraf">+998912226434</p>
+        <Link to="/login">
+          <button className="video">Login/Sign Up</button>
+        </Link>
       </div>
 
       <div className="header__wrapper">
@@ -36,15 +40,17 @@ function Header() {
           <img className="play" src={play} alt="" />
           <img src={sunLogo} alt="sun" />
           <div className="rahbar">
-            <div className="stardiv"><img className="star" src={star} alt="" /></div>
+            <div className="stardiv">
+              <img className="star" src={star} alt="" />
+            </div>
             <div className="left">Rahbar Bo'limi</div>
           </div>
         </div>
       </div>
       <img src={round} alt="" />
       <div className="diamond-round">
-    <img className="liitle-ellipse" src={littleRound} alt="" />
-    <img className="diamond" src={diamond} alt="" />
+        <img className="liitle-ellipse" src={littleRound} alt="" />
+        <img className="diamond" src={diamond} alt="" />
       </div>
     </div>
   );

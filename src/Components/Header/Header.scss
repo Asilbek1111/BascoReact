@@ -4,6 +4,17 @@
   box-sizing: border-box;
   font-family: "Poppins", Poppins, sans-serif;
 }
+.video {
+  background-color: #fbd289;
+  border-radius: 12px;
+  color: black;
+  font-size: 18px;
+  padding: 15px 25px;
+}
+.video:hover{
+  opacity: 0.6;
+  cursor: pointer;
+}
 
 .header {
   position: relative;
@@ -19,6 +30,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .bascologo {
+    width: 200px;
+  }
+  .paragraf {
+    font-size: 18px;
   }
 
   &__wrapper {
@@ -42,14 +60,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        .video {
-          background-color: #fbd289;
-          border-radius: 12px;
-          color: black;
-          font-size: 18px;
-          padding: 15px 25px;
-        }
       }
     }
     .second-part {
