@@ -10,6 +10,7 @@ import Akt from "./Pages/Akt";
 function App() {
   return (
     <div className="App">
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
